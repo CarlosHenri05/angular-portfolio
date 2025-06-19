@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <mat-toolbar>
+        <span class="logo">Carlos Henrique</span>
+        <span class="space"></span>
+        <mat-icon>build</mat-icon>
+        <button
+          mat-button="elevated"
+          color="primary"
+          class="btn-grande"
+          (click)="scrollToSection('#skills')"
+        >
+          Skills
+        </button>
+
+        <mat-icon>book</mat-icon>
+        <button
+          mat-button="elevated"
+          color="primary"
+          class="btn-grande"
+          (click)="scrollToSection('#education')"
+        >
+          Educação
+        </button>
+
+        <mat-icon>phone</mat-icon>
+        <button
+          mat-button="elevated"
+          color="primary"
+          class="btn-grande"
+          (click)="scrollToSection('#contact')"
+        >
+          Contato
+        </button>
+      </mat-toolbar>
+      <div class="container-fluid mt-2">
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6 d-flex flex-row justify-content-end"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

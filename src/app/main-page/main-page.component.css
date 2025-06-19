@@ -1,0 +1,15 @@
+.card-principal {
+  margin-left: 60px auto;
+  margin-top: 120px;
+  padding: 80px;
+  max-width: 600px;
+  background-color: #fff7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.main-page-title {
+  font-size: 30px;
+}
+.space {
+  margin: 10px;
+}
