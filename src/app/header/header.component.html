@@ -33,6 +33,15 @@
         >
           Contato
         </button>
+
+        <span class="space"></span>
+        <mat-icon>{{
+          (isDarkMode$ | async) ? "bedtime" : "brightness_5"
+        }}</mat-icon>
+        <mat-slide-toggle
+          class="toggle-dark-mode"
+          (change)="toggleTheme()"
+        ></mat-slide-toggle>
       </mat-toolbar>
       <div class="container-fluid mt-2">
         <div class="row">

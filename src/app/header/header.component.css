@@ -3,8 +3,19 @@
   padding: 12px 24px;
 }
 .logo {
-  font-size: 30px;
+  font-size: 20px;
 }
 .space {
   flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+main {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
 }

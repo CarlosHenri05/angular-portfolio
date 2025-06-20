@@ -3,7 +3,6 @@
   margin-top: 120px;
   padding: 80px;
   max-width: 600px;
-  background-color: #fff7f7;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -12,4 +11,36 @@
 }
 .space {
   margin: 10px;
+}
+
+.cv-btn {
+  margin-top: 20px;
+}
+
+mat-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+mat-card-header {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+mat-card-content {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+mat-card-footer {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+mat-chip {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
 }
