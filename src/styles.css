@@ -1,15 +1,15 @@
 :root {
-  --primary-color: #007bff;
+  --primary-color: #e10089;
   --background-color: #ffffff;
   --text-color: #333333;
-  --navbar-color: #e7e7e7;
+  --navbar-color: #ffffff;
 }
 
 .dark-theme {
-  --primary-color: #007bff;
+  --primary-color: #e10089;
   --background-color: #1a1a1a;
   --text-color: #ffffff;
-  --navbar-color: #2e2e2e;
+  --navbar-color: #1a1a1a;
 }
 
 .container {
@@ -18,41 +18,8 @@
   transition: background-color 200ms, color 200ms;
 }
 
-mat-card {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-
-mat-card-header {
-  background-color: var(--navbar-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-mat-card-content {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-mat-card-footer {
-  background-color: var(--navbar-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-
-mat-chip {
-  background-color: var(--navbar-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-
-mat-toolbar {
-  background-color: var(--navbar-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
 main {
-  background-color: var(--navbar-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 200ms, color 200ms;
 }

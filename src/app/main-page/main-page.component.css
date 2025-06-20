@@ -1,3 +1,7 @@
+.container {
+  position: sticky;
+}
+
 .card-principal {
   margin-left: 60px auto;
   margin-top: 120px;
@@ -23,24 +27,8 @@ mat-card {
   transition: background-color 200ms, color 200ms;
 }
 
-mat-card-header {
-  background-color: var(--navbar-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
 mat-card-content {
   background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-mat-card-footer {
-  background-color: var(--navbar-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
-}
-
-mat-chip {
-  background-color: var(--navbar-color);
   color: var(--text-color);
   transition: background-color 200ms, color 200ms;
 }

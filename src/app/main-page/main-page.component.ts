@@ -3,10 +3,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-main-page',
-  imports: [MatCardModule, MatIconModule, MatChipsModule, MatButtonModule],
+  imports: [
+    MatCardModule,
+    MatIconModule,
+    MatChipsModule,
+    MatButtonModule,
+    CommonModule,
+  ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.css',
 })

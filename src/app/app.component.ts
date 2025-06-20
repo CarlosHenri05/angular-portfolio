@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ViewEncapsulation } from '@angular/core';
+import { StackComponent } from './stack/stack.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, MainPageComponent],
+  imports: [HeaderComponent, MainPageComponent, StackComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   encapsulation: ViewEncapsulation.None,

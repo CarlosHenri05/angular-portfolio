@@ -1,0 +1,109 @@
+@use "@angular/material" as mat;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-bottom: 1000px;
+}
+
+.stack-card {
+  position: relative;
+  width: 600px;
+  margin-top: -665px;
+}
+
+.space {
+  margin: 10px;
+}
+
+mat-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+mat-card-content {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+.main-card-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.computer-icon {
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  color: var(--primary-color);
+}
+
+.stack-list-content {
+  padding: 20px;
+  display: block;
+}
+
+.technology-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--primary-color, #e10089);
+  border-radius: 4px;
+  padding: 5px;
+  background-color: var(--background-color);
+}
+
+.tech-icon-wrapper {
+  flex-shrink: 0;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon-wrapper mat-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-icon-wrapper mat-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.tech-text-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tech-name {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  color: var(--primary-color, #333333);
+}
+
+.tech-description {
+  font-size: 0.9em;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 450px) {
+  .main-stack-card {
+    width: 95%;
+  }
+}
