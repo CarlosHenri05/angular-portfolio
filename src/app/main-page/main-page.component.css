@@ -1,9 +1,6 @@
-.container {
-  position: sticky;
-}
-
 .card-principal {
-  margin-left: 60px auto;
+  position: fixed;
+  margin-left: 10px auto;
   margin-top: 120px;
   padding: 80px;
   max-width: 600px;
