@@ -15,7 +15,6 @@
   width: 300px;
   margin-left: 50px;
 }
-
 .space {
   margin: 20px;
 }
@@ -27,17 +26,53 @@
 }
 
 mat-card {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
+  background-color: var(--background-color)
+  color: var(--text-color)
+  transition: background-color 200ms, color 200ms
 }
 
 .form-contact {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 200ms, color 200ms;
+  background-color: var(--background-color)
+  color: var(--text-color)
+  transition: background-color 200ms, color 200ms
 }
-
 .submit-button {
   font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 95vw;
+    height: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+  }
+
+  .form-field,
+  .form-field-message {
+    width: 100%;
+    max-width: 90vw;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .form-field-message {
+    height: 120px;
+  }
+
+  .submit-button {
+    font-size: 20px;
+    width: 100%;
+    max-width: 90vw;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
 }
