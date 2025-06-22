@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="form-contact">
+    <mat-card appearance="outlined" class="contact-card">
+      <mat-card-header>
+        <mat-card-title
+          style="
+            color: var(--primary-color);
+            font-size: 30px;
+            margin-left: 130px;
+          "
+          >Vamos trabalhar juntos!</mat-card-title
+        >
+      </mat-card-header>
+      <span class="space"></span>
+      <form action="" class="form-contact" #meuForm="ngForm">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Nome</mat-label>
+          <input
+            matInput
+            placeholder="Seu nome"
+            name="name"
+            size="1"
+            [(ngModel)]="formData.name"
+            required
+          />
+        </mat-form-field>
+        <span class="space"></span>
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>E-mail</mat-label>
+          <input
+            matInput
+            placeholder="Seu e-mail"
+            name="email"
+            size="1"
+            [(ngModel)]="formData.email"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-field-message">
+          <mat-label>Mensagem</mat-label>
+          <textarea
+            matInput
+            placeholder="Sua mensagem"
+            name="message"
+            rows="3"
+            maxlength="300"
+            [(ngModel)]="formData.message"
+            required
+          ></textarea>
+        </mat-form-field>
+      </form>
+      <button
+        mat-flat-button
+        class="submit-button"
+        (click)="sendEmail(meuForm)"
+      >
+        Enviar
+      </button>
+    </mat-card>
+  </div>
+</div>

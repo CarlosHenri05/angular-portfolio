@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: -1000px;
+}
+
+.project-card {
+  position: relative;
+  width: 600px;
+  margin-top: 120px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.book-icon {
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.project-image {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.space {
+  margin: 10px;
+}
+
+mat-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+mat-card-content {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+}

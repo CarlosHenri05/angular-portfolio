@@ -102,8 +102,8 @@ mat-card-content {
   line-height: 1.4;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .main-stack-card {
-    width: 95%;
+    width: 55%;
   }
 }

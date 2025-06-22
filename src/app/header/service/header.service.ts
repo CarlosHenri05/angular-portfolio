@@ -15,6 +15,8 @@ export class HeaderService {
     this.renderer = rendererFactory.createRenderer(null, null);
   }
 
+  @Output() scrollToSectionEvent = new EventEmitter<string>();
+
   @Output() themeToggled = new EventEmitter<boolean>();
 
   setDarkMode(isDark: boolean) {
@@ -31,11 +33,7 @@ export class HeaderService {
   }
 
   scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    this.scrollToSectionEvent.emit(sectionId);
   }
 
   toggleTheme() {
